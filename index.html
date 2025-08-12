@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
-  <body>
+ <body>
     <div class="page">
       <header class="header">
         <nav class="nav">
@@ -18,21 +18,20 @@
             alt="Logotipo de la Biblioteca Triple Peaks"
             class="nav__logo"
           />
-
           <ul class="nav__links">
             <li>
-              <a class="nav__link" href="#staff"
+              <a href="#staff" class="nav__link"
                 >Los preferidos de nuestro staff</a
               >
             </li>
             <li>
-              <a class="nav__link">Eventos</a>
+              <a href="#events" class="nav__link"> Eventos</a>
             </li>
             <li>
-              <a class="nav__link">Conviértete en miembro</a>
+              <a href="#membership" class="nav__link">Conviértete en miembro</a>
             </li>
             <li>
-              <a class="nav__link">Contactos</a>
+              <a href="#footer" class="nav__link"> Contactos</a>
             </li>
           </ul>
         </nav>
@@ -58,13 +57,14 @@
           <p class="header__address">Triple Peaks, 200 Success Avenue</p>
         </div>
       </header>
+
       <main class="content">
-        <section class="staff" id="staff">
+        <section id="staff" class="staff">
           <h2 class="staff__title">Los preferidos de nuestro staff</h2>
           <p class="staff__subtitle">Que nuestros lectores y lectoras aman</p>
           <ul class="staff__cards">
             <li class="card">
-              <section class="card__content">
+              <div class="card__content">
                 <h3 class="card__title">Introducción a los algoritmos</h3>
                 <p class="card__text">
                   El nombre de este libro se explica por sí solo; ¡es una buena
@@ -77,11 +77,11 @@
                   Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
                   Clifford Stein
                 </p>
-              </section>
+              </div>
             </li>
 
             <li class="card">
-              <section class="card__content">
+              <div class="card__content">
                 <h3 class="card__title">
                   La estructura e interpretación de los programas
                   computacionales (SICP)
@@ -96,11 +96,11 @@
                 <p class="card__footer">
                   Harold Abelson, Gerald Jay Sussman, Julie Sussman
                 </p>
-              </section>
+              </div>
             </li>
 
             <li class="card">
-              <section class="card__content">
+              <div class="card__content">
                 <h3 class="card__title">
                   El programador limpio: un código de conducta para
                   programadores profesionales
@@ -114,11 +114,11 @@
                   profesional.
                 </p>
                 <p class="card__footer">Steve McConnell</p>
-              </section>
+              </div>
             </li>
 
             <li class="card">
-              <section class="card__content">
+              <div class="card__content">
                 <h3 class="card__title">
                   Código completo: un manual práctico de construcción de
                   software
@@ -133,26 +133,26 @@
                   de código.
                 </p>
                 <p class="card__footer">Steve McConnell</p>
-              </section>
+              </div>
             </li>
           </ul>
         </section>
-        <section class="events" id="events">
-          <section class="events__content">
+        <section id="events" class="events">
+          <div class="events__content">
             <h2 class="events__heading">Próximos eventos:</h2>
             <h3 class="events__title">
               En honor de Joan Feynman: mujeres en la astrofísica
             </h3>
-            <section class="event-info events__info-section">
-              <section class="event-info__item">
+            <div class="event-info events__info-section">
+              <div class="event-info__item">
                 <img
                   src="./images/icon_calendar.svg"
                   alt="Calendar icon"
                   class="event-info__icon"
                 />
                 <p class="event-info__text">Lunes 12 de enero</p>
-              </section>
-              <section class="event-info__item">
+              </div>
+              <div class="event-info__item">
                 <img
                   src="./images/icon_pin.svg"
                   alt="Pin icon"
@@ -161,8 +161,8 @@
                 <p class="event-info__text">
                   Sala de conferencias y virtual de la biblioteca Triple Peaks
                 </p>
-              </section>
-            </section>
+              </div>
+            </div>
             <p class="events__description">
               En este evento, en el que celebramos el nombre de nuestra
               biblioteca, nuestra invitada nos llevará a través de un viaje para
@@ -173,51 +173,50 @@
               sido así desde, al menos, el siglo XVII.
             </p>
             <a href="#" class="events__more">Más eventos &rarr;</a>
-          </section>
-          <section class="events__cover">
+          </div>
+          <div class="events__cover">
             <img class="events__image" src="images/cafe.png" alt="cafe" />
-            <section class="person person_name_feynman">
+            <div class="person person_name_feynman">
               <p class="person__caption">Joan Feynman</p>
               <img
                 class="person__image person__image_size_l"
                 src="images/person_feynman.png"
                 alt="Joan Feynman"
               />
-            </section>
-            <section class="person person_name_burbidge">
+            </div>
+            <div class="person person_name_burbidge">
               <p class="person__caption">Margaret Burbidge</p>
               <img
                 class="person__image person__image_size_m"
                 src="images/person_burbidge.png"
                 alt="Margaret Burbidge"
               />
-            </section>
-            <section class="person person_name_cannon">
+            </div>
+            <div class="person person_name_cannon">
               <img
                 class="person__image person__image_size_m"
                 src="images/person_cannon.png"
                 alt="Annie Jump Cannon"
               />
               <p class="person__caption">Annie Jump Cannon</p>
-            </section>
-            <section class="person person_name_mitchell">
+            </div>
+            <div class="person person_name_mitchell">
               <img
                 class="person__image person__image_size_s"
                 src="images/person_mitchell.png"
                 alt="Maria Mitchel"
               />
               <p class="person__caption">Maria Mitchell</p>
-            </section>
-            <section class="person person_name_tarter">
+            </div>
+            <div class="person person_name_tarter">
               <p class="person__caption">Jill Tarter</p>
               <img
                 class="person__image person__image_size_m"
                 src="images/person_tarter.png"
                 alt="Jill Tarter"
               />
-            </section>
-          </section>
-        </section>
+            </div>
+          </div>
         </section>
       </main>
       </main>
